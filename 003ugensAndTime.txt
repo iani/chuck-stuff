@@ -1,0 +1,17 @@
+// connect SinOsc to dac
+SinOsc s => dac;
+
+// let time pass for 1 second letting audio be computed for that amount of time
+1::second => now;
+
+// disconnect s from the dac
+s =< dac;
+
+// let time pass for another second - should hear silence
+1::second => now;
+
+// duh, connect them again
+s => dac;
+
+// let time pass...
+1::second => now;

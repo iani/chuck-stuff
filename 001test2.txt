@@ -1,0 +1,14 @@
+
+<<<1.0 + 2.5 >>>=> float x;
+
+// prints "the value of x is 3.5" (x from above)
+<<<"the value of x is" , x >>>;
+
+// prints "4 + 5 is 9"
+<<<"4 + 5 is", 4 + 5>>>;
+
+// prints "here are 3 random numbers ? ? ?"
+<<<"here are 3 random numbers", 
+Std.rand2(0,9), 
+Std.rand2(0,9),
+Std.rand2(0,9) >>>; 

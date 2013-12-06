@@ -1,0 +1,16 @@
+// connect SinOsc to dac
+SinOsc s => dac;
+// set initial frequency (see next section)
+440 => s.freq;
+
+// advance time; allow audio to compute
+1::second => now;
+
+/*
+NOTE: ChucK will exit after 1::second has reached now. 
+
+Thus, it only "lives" as long as there is some explicit duration chucked to now, and that time has not yet past.
+
+Note 2: In this sense, a ChucK program is equivalent to a Routine in SuperCollider.  The difference is that inside a ChucK program one can put "raw" UGen statements, (SuperCollider does not do that. It spawns processes in a different program, the server.)
+
+*/
