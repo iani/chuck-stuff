@@ -1,10 +1,10 @@
 // assign 5 to a newly declared variable
-    5 => int i;
-    // prints "5 : (int)"
-    <<<i>>>;
+5 => int i;
+// prints "5 : (int)"
+<<<i>>>;
 
-    // prints "hello! : (string)"
-    <<<"hello!">>>; //prints "hello! : (string)"
+// prints "hello! : (string)"
+<<<"hello!">>>; //prints "hello! : (string)"
 
-    // prints "3.5 : (float)"
-    <<<1.0 + 2.5 >>>=> float x;
+// prints "3.5 : (float)"
+<<<1.0 + 2.5 >>>=> float x;
